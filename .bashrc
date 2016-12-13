@@ -15,3 +15,19 @@ cdf () {
 }
 export st=~/Documents/sourceTree/
 alias st="cd $st;ls"
+export gh=~/Documents/sourceTree/rc_github/
+alias gh="cd $gh;ls"
+alias text="cd ~/Documents/text/ ;ls"
+alias consoledev="echo 'ec2-52-69-99-166.ap-northeast-1.compute.amazonaws.com'"
+
+
+#history share
+function share_history {
+    history -a
+    history -c
+    history -r
+}
+#PROMPT_COMMAND='share_history'
+#shopt -u histappend
+
+

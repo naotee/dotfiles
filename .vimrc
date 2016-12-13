@@ -27,6 +27,10 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'kakkyz81/evervim'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 
 " You can specify revision/branch/tag.
@@ -84,4 +88,17 @@ set directory=~/.vim/swap
 "タブ、空白、改行の可視化
 " set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
+
+" evernote token
+let g:evervim_devtoken='S=s610:U=70c875a:E=1571d99a8b9:C=14fc5e878d8:P=1cd:A=en-devtoken:V=2:H=d94ce04e819e661a70e41ab5f265c777'
+" markdown
+autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+" esc map
+imap <c-j> <esc>
+
+
+" markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:vim_markdown_folding_disabled=1
+" let g:previm_open_cmd = 'open -a chrome'
 
